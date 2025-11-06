@@ -1,0 +1,76 @@
+import { FaPhone } from "react-icons/fa6";
+import { motion, } from "framer-motion";
+
+
+function RightExperience() {
+    const colors = ["#854FEE", "#00bcd4", "#FF5722", "#854FEE"];
+
+    return (
+        <div className="basis-[50%] bg-gray-50 dark:bg-gray-950">
+            <div className="sm:pl-32 sm:pt-10 relative">
+                {/* Animated Borders */}
+                <motion.span
+                    className="w-[165px] h-[175px] hidden sm:block top-[30px] left-[20px] z-0 border-dashed border-2 absolute"
+                    animate={{ borderColor: colors }}
+                    transition={{ repeat: Infinity, repeatType: "loop", duration: 4, ease: "easeInOut" }}
+                >
+                    <motion.span
+                        className="w-[165px] h-[175px] border-2 border-dotted absolute"
+                        animate={{ borderColor: colors }}
+                        transition={{ repeat: Infinity, repeatType: "loop", duration: 4, ease: "easeInOut" }}
+                    >
+                        <motion.span
+                            className="w-[150px] h-[160px] border-2 top-[4px] left-[4px] border-dashed absolute"
+                            animate={{ borderColor: colors }}
+                            transition={{ repeat: Infinity, repeatType: "loop", duration: 4, ease: "easeInOut" }}
+                        ></motion.span>
+                    </motion.span>
+                </motion.span>
+
+                <div className="flex items-center gap-6 sm:gap-8 mb-15">
+                    {/* Animated "01" Number */}
+                    <motion.h2
+                        className="text-[100px] sm:text-[120px] font-bold glow-text"
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        animate={{ color: colors }}
+                        transition={{ repeat: Infinity, repeatType: "loop", duration: 4, ease: "easeInOut" }}
+                    >
+                        01
+                    </motion.h2>
+
+                    <motion.p
+                        className="font-bold text-black dark:text-white text-[18px] sm:text-[25px]"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                    >
+                        Years
+                        <span className="block">Experience</span>
+                        <span className="block">Working</span>
+                    </motion.p>
+                </div>
+
+                <motion.div
+                    className="flex items-center gap-x-3.5"
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                    <h2>
+                        <FaPhone className="text-[40px] sm:text-[50px]" />
+                    </h2>
+                    <div>
+                        <p className="text-[#854FEE] text-[16px] sm:text-[20px] font-[300]">call us now</p>
+                        <p className="text-[19px] sm:text-[25px] font-bold">(+88)-013-3953-9820</p>
+                    </div>
+                </motion.div>
+            </div>
+        </div>
+    );
+}
+
+export default RightExperience;
