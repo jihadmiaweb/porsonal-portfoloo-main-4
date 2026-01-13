@@ -10,7 +10,7 @@ const Hero = () => {
     const darkMode = theme === "dark";
 
     const backgroundImageStyle = {
-        backgroundImage: darkMode ? "url('/imgas/biner2.jpg')" : "url('/imgas/1.jpg')",
+        backgroundImage: darkMode ? "url('/imgas/biner2.jpg')" : "url('/imgas/7064.jpg')",
     };
 
     // Parallax state
@@ -42,7 +42,7 @@ const Hero = () => {
     };
 
     return (
-        <section
+        <section id="home"
             className="relative bg-cover bg-center min-h-screen flex items-center transition-all duration-700"
             style={backgroundImageStyle}
         >
@@ -61,15 +61,19 @@ const Hero = () => {
                 <div className="text-left space-y-6 text-white z-10">
                     <h1 className="font-poppins text-4xl md:text-5xl font-bold">
                         <div className="relative inline-block">
-                            <span className="text-2xl md:text-3xl">HELLO</span>
-                            <div className="h-1 w-24 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 absolute -bottom-2 left-0 rounded-full"></div>
+                            <span className="relative z-10 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400">
+                                HELLO
+                            </span>
+
+                            <span className="h-1 w-34 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 absolute -bottom-1 left-0 rounded-full"></span>
                         </div>
+
                         <div className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 font-bold">
                             I AM JIHAD MIA
                         </div>
                     </h1>
 
-                    <p className="font-poppins text-lg md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+                    <p className="font-poppins text-lg md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                         <ReactTyped
                             strings={["Frontend Developer", "React Developer", "JavaScript Enthusiast", "UI Designer"]}
                             typeSpeed={60}
@@ -99,7 +103,7 @@ const Hero = () => {
                     style={{ perspective: 1000 }}
                 >
                     <img
-                        src="/imgas/home-right.png"
+                        src="/imgas/home-right1.png"
                         alt="Jihad Mia Hero"
                         style={{
                             transform: `rotateY(${offset.x}deg) rotateX(${-offset.y}deg) translateY(${floatOffset}px) scale(1.05)`,

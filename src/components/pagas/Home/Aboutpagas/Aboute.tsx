@@ -5,7 +5,7 @@ import aboutData from "@/components/data/aboutData";
 
 const About = () => {
     return (
-        <section id="about" className="py-20 lg:px-12 bg-gray-50 dark:bg-gray-900 ">
+        <section id="about" className="py-20 lg:px-12 bg-gray-50 dark:bg-gray-950 ">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
 
