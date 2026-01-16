@@ -40,7 +40,7 @@ const CV = () => {
 
                     <div className="flex flex-wrap justify-center gap-4 mt-2 text-sm text-gray-600">
                         <span>📞 +8801940386783</span>
-                        <span>📞 +8801940386783</span>
+
 
                         <span>✉ jihadmiaweb@gmail.com</span>
                     </div>
