@@ -40,6 +40,7 @@ const CV = () => {
 
                     <div className="flex flex-wrap justify-center gap-4 mt-2 text-sm text-gray-600">
                         <span>📞 +8801940386783</span>
+                        <span>📞 +8801940386783</span>
 
                         <span>✉ jihadmiaweb@gmail.com</span>
                     </div>
@@ -88,6 +89,7 @@ const CV = () => {
                             Educational Website — <a href="https://online-mdrasha-web-site.vercel.app/" className="text-blue-500 hover:underline">Live</a> | <a href="https://github.com/jihadmiaweb/Online-mdrasha-web-site" className="text-blue-500 hover:underline">GitHub</a>
                         </p>
                         <p>An interactive educational platform with content, videos, and audio lessons. Fully responsive and user-friendly.</p>
+                        <span className="text-14px">Technologies: HTML, CSS, React, Tailwind CSS</span>
                     </div>
 
                     <div className="mb-2">
@@ -95,13 +97,15 @@ const CV = () => {
                             Blog Website — <a href="https://conten-bolog-site.vercel.app/" className="text-blue-500 hover:underline">Live</a> | <a href="https://github.com/jihadmiaweb/Conten-Bolog-site" className="text-blue-500 hover:underline">GitHub</a>
                         </p>
                         <p>Responsive blog with educational articles, comments, and clean UI.</p>
+                        <span className="text-14px">Technologies: HTML, CSS, React, Tailwind CSS</span>
                     </div>
 
                     <div className="mb-2">
                         <p className="font-semibold">
-                            Portfolio Website — <a href="https://porsonal-wevsite.vercel.app/" className="text-blue-500 hover:underline">Live</a> | <a href="#" className="text-blue-500 hover:underline">GitHub</a>
+                            Portfolio Website — <a href="https://porsonal-wevsite.vercel.app/" className="text-blue-500 hover:underline">Live</a> | <a href="https://github.com/jihadmiaweb/porsonal-wevsite" className="text-blue-500 hover:underline">GitHub</a>
                         </p>
                         <p>Personal portfolio with interactive sections, animations, and responsive design.</p>
+                        <span className="text-14px">Technologies: HTML, CSS, React, Tailwind CSS</span>
                     </div>
                 </section>
 
@@ -112,10 +116,7 @@ const CV = () => {
                 </section>
 
                 {/* Certifications */}
-                <section>
-                    <h2 className="text-blue-600 font-semibold border-b border-gray-300 pb-1 mb-2">Certifications</h2>
-                    <p>English Diploma — Ahmad’s Education, 2025</p>
-                </section>
+
             </div>
         </div>
     );
